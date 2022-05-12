@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HookahDex</string>
+    <string name="registrar">Registrar</string>
+    <string name="acceder">acceder</string>
 </resources>

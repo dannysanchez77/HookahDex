@@ -14,27 +14,27 @@
         android:orientation="vertical"
         android:padding="10dp">
 
-        <EditText
+        <TextView
             android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:ems="10"
             android:hint="Email"
+            android:inputType="textEmailAddress"
             android:textColorHint="@color/white"
-            android:inputType="textEmailAddress" />
+            />
         <Space
             android:layout_width="match_parent"
             android:layout_height="8dp">
 
         </Space>
-        <EditText
+        <TextView
             android:id="@+id/editTextContrasena"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:ems="10"
             android:hint="Contraseña"
             android:textColorHint="@color/white"
-
             android:inputType="textPassword" />
         <Space
             android:layout_width="match_parent"
@@ -48,27 +48,15 @@
             >
 
             <Button
-                android:id="@+id/registrarBoton"
+                android:id="@+id/cerrarBoton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/registrar"
-                android:backgroundTint="@color/azul_oscuro"
+                android:text="cerrar sesion"
+                android:backgroundTint="@color/naranja"
                 android:textColor="@color/white"
                 />
-<Space
-    android:layout_width="8dp"
-    android:layout_height="match_parent">
 
-</Space>
-            <Button
-                android:id="@+id/botonAcceder"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/cian"
-                android:textColor="@color/white"
-                android:text="@string/acceder"/>
         </LinearLayout>
 
         <LinearLayout
@@ -83,5 +71,4 @@
             </ImageView>
         </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>

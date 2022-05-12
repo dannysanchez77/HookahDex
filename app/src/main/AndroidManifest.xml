@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HookahDex">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".AuthActivity"
             android:exported="true">
             <intent-filter>
