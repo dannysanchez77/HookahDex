@@ -34,6 +34,8 @@ class AuthActivity : AppCompatActivity() {
                     binding.editTextContrasena.text.toString()).addOnCompleteListener {
                         if (it.isSuccessful){
 
+                            showHome(binding.editTextEmail.text.toString())
+
                         }else{
                             showAlert()
                         }
@@ -50,10 +52,11 @@ class AuthActivity : AppCompatActivity() {
         val dialog: AlertDialog = builder.create()
         dialog. show()
     }
-    /*private fun showHome (email: String, provider: ProviderType){
-   //     val homeIntent : Intent(this, HomeActivity::class.java).apply{
-     //       putExtra("email", email)
+    private fun showHome (email: String){
+      val homeIntent = Intent(this, HomeActivity::class.java).apply{
+           putExtra("email", email)
         }
+        startActivity(homeIntent)
     }
-*/
+
 }

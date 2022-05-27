@@ -5,15 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AuthActivity"
-    android:background="@mipmap/fondo">
-
-
+    android:background="@mipmap/fondo"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/solo_logo">
+        </ImageView>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="10dp">
-
         <TextView
             android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
@@ -22,11 +33,11 @@
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
             />
         <Space
             android:layout_width="match_parent"
             android:layout_height="8dp">
-
         </Space>
         <TextView
             android:id="@+id/editTextContrasena"
@@ -35,18 +46,17 @@
             android:ems="10"
             android:hint="Contraseña"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
             android:inputType="textPassword" />
         <Space
             android:layout_width="match_parent"
             android:layout_height="8dp">
-
         </Space>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
-
             <Button
                 android:id="@+id/cerrarBoton"
                 android:layout_width="wrap_content"
@@ -56,19 +66,6 @@
                 android:backgroundTint="@color/naranja"
                 android:textColor="@color/white"
                 />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@mipmap/solo_logo">
-
-            </ImageView>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

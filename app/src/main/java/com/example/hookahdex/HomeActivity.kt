@@ -2,13 +2,23 @@ package com.example.hookahdex
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.hookahdex.databinding.ActivityAuthBinding
+import com.example.hookahdex.databinding.ActivityHomeBinding
 
-enum class ProviderType{
-    BASIC
-}
 class HomeActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val bundle:Bundle?=intent.extras
+        val email:String?=bundle?.getString("email")
+
+        setup(email?:"")
+    }
+
+    fun setup (email :String){
+
     }
 }
