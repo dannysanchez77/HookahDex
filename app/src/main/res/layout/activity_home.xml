@@ -26,28 +26,15 @@
         android:orientation="vertical"
         android:padding="10dp">
         <TextView
-            android:id="@+id/editTextEmail"
+            android:id="@+id/usuario"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:ems="10"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
+            android:textSize="18sp"
             android:textColorHint="@color/white"
             android:textColor="@color/white"
+            android:textAlignment="center"
             />
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="8dp">
-        </Space>
-        <TextView
-            android:id="@+id/editTextContrasena"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:hint="Contraseña"
-            android:textColorHint="@color/white"
-            android:textColor="@color/white"
-            android:inputType="textPassword" />
         <Space
             android:layout_width="match_parent"
             android:layout_height="8dp">
@@ -56,7 +43,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            >
+            ><Button
+            android:id="@+id/inicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="inicio"
+            android:backgroundTint="@color/purple_200"
+            android:textColor="@color/white"
+            />
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="match_parent">
+
+            </Space>
             <Button
                 android:id="@+id/cerrarBoton"
                 android:layout_width="wrap_content"
@@ -65,6 +65,7 @@
                 android:text="cerrar sesion"
                 android:backgroundTint="@color/naranja"
                 android:textColor="@color/white"
+
                 />
         </LinearLayout>
     </LinearLayout>

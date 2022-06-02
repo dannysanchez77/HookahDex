@@ -27,18 +27,29 @@ class AuthActivity : AppCompatActivity() {
         setup()
     }
     private fun setup(){
-        title = "Autenticación"
+
         binding.registrarBoton.setOnClickListener{
             if (binding.editTextEmail.text.isNotEmpty() && binding.editTextContrasena.text.isNotEmpty()){
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(binding.editTextEmail.text.toString(),
                     binding.editTextContrasena.text.toString()).addOnCompleteListener {
                         if (it.isSuccessful){
-
                             showHome(binding.editTextEmail.text.toString())
-
                         }else{
                             showAlert()
                         }
+                }
+
+            }
+        }
+        binding.botonAcceder.setOnClickListener {
+            if (binding.editTextEmail.text.isNotEmpty() && binding.editTextContrasena.text.isNotEmpty()){
+                FirebaseAuth.getInstance().signInWithEmailAndPassword(binding.editTextEmail.text.toString(),
+                    binding.editTextContrasena.text.toString()).addOnCompleteListener {
+                    if (it.isSuccessful){
+                        showHome(binding.editTextEmail.text.toString())
+                    }else{
+                        showAlert()
+                    }
                 }
 
             }

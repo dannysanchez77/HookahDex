@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.hookahdex.databinding.ActivityAuthBinding
 import com.example.hookahdex.databinding.ActivityHomeBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
@@ -19,6 +20,11 @@ class HomeActivity : AppCompatActivity() {
     }
 
     fun setup (email :String){
+    binding.usuario.text = email
+        binding.cerrarBoton.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            onBackPressed()
+        }
 
     }
 }
