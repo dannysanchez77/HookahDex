@@ -1,72 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AuthActivity"
     android:background="@mipmap/fondo"
     android:orientation="vertical">
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
+        android:layout_gravity="center_horizontal"
         >
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@mipmap/solo_logo">
-        </ImageView>
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/solo_logo"
+            android:layout_margin="30dp"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="10dp">
-        <TextView
-            android:id="@+id/usuario"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:textSize="18sp"
-            android:textColorHint="@color/white"
-            android:textColor="@color/white"
-            android:textAlignment="center"
-            />
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="8dp">
-        </Space>
-        <LinearLayout
+        android:layout_height="wrap_content">
+
+        <SearchView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            ><Button
-            android:id="@+id/inicio"
+            android:background="@drawable/bordesito"
+            android:layout_margin="20dp"
+            android:outlineSpotShadowColor="@color/azul_oscuro"
+            >
+
+        </SearchView>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="inicio"
-            android:backgroundTint="@color/purple_200"
-            android:textColor="@color/white"
-            />
-            <Space
-                android:layout_width="8dp"
-                android:layout_height="match_parent">
-
-            </Space>
-            <Button
-                android:id="@+id/cerrarBoton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="cerrar sesion"
-                android:backgroundTint="@color/naranja"
-                android:textColor="@color/white"
-
-                />
-        </LinearLayout>
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@mipmap/hogar"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@mipmap/hogar"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@mipmap/hogar"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@mipmap/hogar"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@mipmap/hombre"/>
     </LinearLayout>
 </LinearLayout>

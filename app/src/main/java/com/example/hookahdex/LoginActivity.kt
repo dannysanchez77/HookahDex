@@ -4,19 +4,17 @@ import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import com.example.hookahdex.databinding.ActivityAuthBinding
+import com.example.hookahdex.databinding.ActivityLoginBinding
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.ktx.Firebase
 
-class AuthActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityAuthBinding
+class LoginActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         Thread.sleep(2000)
         setTheme(R.style.AppTheme)
         super.onCreate(savedInstanceState)
-        binding = ActivityAuthBinding.inflate(layoutInflater)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val analytics = FirebaseAnalytics.getInstance(this)
@@ -64,7 +62,7 @@ class AuthActivity : AppCompatActivity() {
         dialog. show()
     }
     private fun showHome (email: String){
-      val homeIntent = Intent(this, HomeActivity::class.java).apply{
+      val homeIntent = Intent(this, UsuarioActivity::class.java).apply{
            putExtra("email", email)
         }
         startActivity(homeIntent)
