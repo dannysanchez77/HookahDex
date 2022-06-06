@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/home"
+    android:icon="@mipmap/hogar"
+    android:title="Home"
+    android:iconTint="@color/naranja">
+</item>
+    <item
+        android:id="@+id/ingredientes"
+        android:icon="@mipmap/ingredientes"
+        android:title="ingredientes"
+        android:iconTintMode="src_over"></item>
+    <item
+        android:id="@+id/gusto"
+        android:icon="@mipmap/dulce"
+        android:title="Gusto"
+        android:iconTint="@color/naranja"></item>
+    <item
+        android:id="@+id/user"
+        android:icon="@mipmap/hombre"
+        android:title="Usuario"
+        android:iconTint="@color/naranja"></item>
+</menu>

@@ -1,5 +1,6 @@
 package com.example.hookahdex
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.hookahdex.databinding.ActivityUsuarioBinding
@@ -16,6 +17,11 @@ class UsuarioActivity : AppCompatActivity() {
         val email:String?=bundle?.getString("email")
 
         setup(email?:"")
+        binding.inicio.setOnClickListener{
+            val intent = Intent(this,HomeActivity::class.java)
+                startActivity(intent)
+
+        }
     }
 
     fun setup (email :String){
@@ -24,6 +30,5 @@ class UsuarioActivity : AppCompatActivity() {
             FirebaseAuth.getInstance().signOut()
             onBackPressed()
         }
-
     }
 }

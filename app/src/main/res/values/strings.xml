@@ -2,4 +2,6 @@
     <string name="app_name">HookahDex</string>
     <string name="registrar">Registrar</string>
     <string name="acceder">acceder</string>
+    <string name="gusto">Gusto</string>
+    <string name="usuario">Usuario</string>
 </resources>
