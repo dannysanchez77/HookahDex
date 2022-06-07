@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bordesito"
-            android:layout_margin="20dp"
+            android:layout_margin="12dp"
             android:outlineSpotShadowColor="@color/azul_oscuro"
             >
 
@@ -144,6 +144,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_weight="1"
+    android:id="@+id/pieHome"
 
     >
     <ImageView
@@ -169,6 +170,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="1"
+            android:id="@+id/pieMarcas"
             >
             <ImageView
                 android:layout_width="match_parent"
@@ -193,6 +195,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="1"
+            android:id="@+id/pieIngredientes"
             >
             <ImageView
                 android:layout_width="match_parent"
@@ -217,6 +220,8 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="1"
+            android:id="@+id/pieGusto"
+
             >
             <ImageView
                 android:layout_width="match_parent"
@@ -241,6 +246,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="1"
+            android:id="@+id/pieUsuario"
             >
             <ImageView
                 android:layout_width="match_parent"

@@ -1,17 +1,19 @@
 package com.example.hookahdex
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
+
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.hookahdex.databinding.ActivityGustoBinding
 import com.example.hookahdex.databinding.ActivityHomeBinding
+import com.example.hookahdex.databinding.ActivityMarcasBinding
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 
-class HomeActivity:AppCompatActivity() {
-    private lateinit var binding: ActivityHomeBinding
+class GustoActivity:AppCompatActivity() {
+    private lateinit var binding: ActivityGustoBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityHomeBinding.inflate(layoutInflater)
+        binding = ActivityGustoBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val database = Firebase.database("https://hookahdex-default-rtdb.europe-west1.firebasedatabase.app/")
         ////////////////////////
@@ -37,18 +39,30 @@ class HomeActivity:AppCompatActivity() {
             startActivity(intent)
         }
         //////////////////////////////////////////
-        //Configuracion fotos
-        binding.marcas.setOnClickListener{
-            val intent = Intent(this,MarcasActivity::class.java)
-            startActivity(intent)
+        binding.gustoAfrutado.setOnClickListener {
+
         }
-        binding.ingredientes.setOnClickListener{
-            val intent = Intent(this,IngredientesActivity::class.java)
-            startActivity(intent)
+        binding.gustoHielo.setOnClickListener {
+
         }
-        binding.gusto.setOnClickListener{
-            val intent = Intent(this,GustoActivity::class.java)
-            startActivity(intent)
+        binding.gustoMentol.setOnClickListener {
+
+        }
+        binding.gustoDulce.setOnClickListener {
+
+        }
+        binding.gustoPicante.setOnClickListener {
+
+        }
+        binding.gustoCremoso.setOnClickListener {
+
+        }
+        binding.gustoFloral.setOnClickListener {
+
+        }
+        binding.gustoCitrico.setOnClickListener {
+
         }
     }
+
 }

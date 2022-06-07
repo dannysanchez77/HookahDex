@@ -1,5 +1,6 @@
 package com.example.hookahdex
-
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,7 +13,7 @@ class UsuarioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityUsuarioBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        val database = Firebase.database("https://hookahdex-default-rtdb.europe-west1.firebasedatabase.app/")
         val bundle:Bundle?=intent.extras
         val email:String?=bundle?.getString("email")
 
