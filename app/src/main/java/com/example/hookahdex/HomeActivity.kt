@@ -3,7 +3,6 @@ import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hookahdex.databinding.ActivityHomeBinding
 

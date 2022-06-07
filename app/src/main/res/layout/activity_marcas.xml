@@ -10,8 +10,8 @@
         android:layout_gravity="center_horizontal"
         >
         <ImageView
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:src="@mipmap/solo_logo"
             android:layout_margin="10dp"
             />
@@ -21,6 +21,7 @@
         android:layout_height="wrap_content">
 
         <SearchView
+            android:id="@+id/barraBusqueda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bordesito"
@@ -57,7 +58,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:id="@+id/marca1"
+                    android:id="@+id/hookain"
                     >
                     <ImageView
                         android:layout_width="200dp"
@@ -65,8 +66,7 @@
                         android:src="@mipmap/hookain"
                         android:layout_gravity="center"
                         android:padding="25dp"
-                        android:layout_margin="6dp"
-                        android:id="@+id/imagenMarca1"/>
+                        android:layout_margin="6dp" />
                     <Space
                         android:layout_width="wrap_content"
                         android:layout_height="5dp">
@@ -74,12 +74,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="MARCA1"
+                        android:text="HOOKAIN"
                         android:textColor="@color/naranja"
                         android:textSize="20sp"
                         android:gravity="center"
-                        android:textStyle="bold"
-                        android:id="@+id/textMarca1">
+                        android:textStyle="bold">
                     </TextView>
 
                 </LinearLayout>
@@ -87,7 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:id="@+id/marca3"
+                    android:id="@+id/holster"
                     >
                     <ImageView
                         android:layout_width="200dp"
@@ -98,7 +97,7 @@
                         android:padding="25dp"
                         android:layout_margin="6dp"
 
-                        android:id="@+id/imagenMarca3"/>
+                       />
                     <Space
                         android:layout_width="wrap_content"
                         android:layout_height="5dp">
@@ -106,12 +105,12 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="MARCA3"
+                        android:text="HOLSTER"
                         android:textColor="@color/naranja"
                         android:textSize="20sp"
                         android:gravity="center"
                         android:textStyle="bold"
-                        android:id="@+id/textMarca3">
+                        >
                     </TextView>
 
                 </LinearLayout>
@@ -119,18 +118,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:id="@+id/marca5"
+                    android:id="@+id/overdooz"
                     >
                     <ImageView
                         android:layout_width="200dp"
                         android:layout_height="200dp"
-                        android:src="@mipmap/logo"
+                        android:src="@mipmap/logo_overdooz"
                         android:layout_gravity="center"
                         android:scaleType="centerCrop"
                         android:padding="25dp"
-                        android:layout_margin="6dp"
-
-                        android:id="@+id/imagenMarca5"/>
+                        android:layout_margin="6dp" />
                     <Space
                         android:layout_width="wrap_content"
                         android:layout_height="5dp">
@@ -138,12 +135,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="MARCA5"
+                        android:text="OVERDOOZ"
                         android:textColor="@color/naranja"
                         android:textSize="20sp"
                         android:gravity="center"
-                        android:textStyle="bold"
-                        android:id="@+id/textMarca5">
+                        android:textStyle="bold">
                     </TextView>
 
                 </LinearLayout>
@@ -156,17 +152,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:id="@+id/marca2"
+                    android:id="@+id/dozaj"
                     >
                     <ImageView
                         android:layout_width="200dp"
                         android:layout_height="200dp"
-                        android:src="@mipmap/dozaj"
+                        android:src="@mipmap/dozaj_marca"
                         android:layout_gravity="center"
-
                         android:padding="25dp"
-                        android:layout_margin="6dp"
-                        android:id="@+id/imagenMarca2"/>
+                        android:layout_margin="6dp" />
                     <Space
                         android:layout_width="wrap_content"
                         android:layout_height="5dp">
@@ -174,12 +168,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="MARCA2"
+                        android:text="DOZAJ"
                         android:textColor="@color/naranja"
                         android:textSize="20sp"
                         android:gravity="center"
-                        android:textStyle="bold"
-                        android:id="@+id/textMarca2">
+                        android:textStyle="bold">
                     </TextView>
 
 
@@ -188,17 +181,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:id="@+id/marca4"
+                    android:id="@+id/mrshisha"
                     >
                     <ImageView
-                        android:id="@+id/imagenMarca4"
                         android:layout_width="200dp"
                         android:layout_height="200dp"
                         android:layout_gravity="center"
                         android:padding="25dp"
                         android:layout_margin="6dp"
                         android:scaleType="centerCrop"
-                        android:src="@mipmap/mrshisha" />
+                        android:src="@mipmap/mrshisha_logo" />
 
                     <Space
                         android:layout_width="wrap_content"
@@ -207,12 +199,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="MARCA4"
+                        android:text="MrSHISHA"
                         android:textColor="@color/naranja"
                         android:textSize="20sp"
                         android:gravity="center"
-                        android:textStyle="bold"
-                        android:id="@+id/textMarca4">
+                        android:textStyle="bold">
                     </TextView>
 
                 </LinearLayout>
@@ -220,18 +211,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:id="@+id/marca6"
+                    android:id="@+id/chronos"
                     >
                     <ImageView
                         android:layout_width="200dp"
                         android:layout_height="200dp"
-                        android:src="@mipmap/logo"
+                        android:src="@mipmap/chronos"
                         android:layout_gravity="center"
                         android:scaleType="centerCrop"
                         android:padding="25dp"
-                        android:layout_margin="6dp"
-
-                        android:id="@+id/imagenMarca6"/>
+                        android:layout_margin="6dp" />
                     <Space
                         android:layout_width="wrap_content"
                         android:layout_height="5dp">
@@ -239,14 +228,12 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="MARCA6"
+                        android:text="CHRONOS"
                         android:textColor="@color/naranja"
                         android:textSize="20sp"
                         android:gravity="center"
-                        android:textStyle="bold"
-                        android:id="@+id/textMarca6">
+                        android:textStyle="bold">
                     </TextView>
-
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

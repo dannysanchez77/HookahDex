@@ -4,8 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hookahdex.databinding.ActivityGustoBinding
-import com.example.hookahdex.databinding.ActivityHomeBinding
-import com.example.hookahdex.databinding.ActivityMarcasBinding
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
@@ -63,6 +61,7 @@ class GustoActivity:AppCompatActivity() {
         binding.gustoCitrico.setOnClickListener {
 
         }
+
     }
 
 }

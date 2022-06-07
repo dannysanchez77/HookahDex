@@ -2,11 +2,8 @@ package com.example.hookahdex
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.hookahdex.databinding.ActivityHomeBinding
 import com.example.hookahdex.databinding.ActivityMarcasBinding
 
 class MarcasActivity:AppCompatActivity() {
@@ -39,13 +36,23 @@ class MarcasActivity:AppCompatActivity() {
             startActivity(intent)
         }
         //////////////////////////////////////////
-        binding.imagenMarca5.setOnClickListener {
-            database.reference.child("mrShisha").get().addOnSuccessListener {
-                binding.textMarca3.text = it.value.toString()
-                Toast.makeText(this, it.value.toString(), Toast.LENGTH_SHORT).show()
-            }
+        binding.hookain.setOnClickListener {
 
         }
+        binding.holster.setOnClickListener {
 
+        }
+        binding.overdooz.setOnClickListener {
+
+        }
+        binding.dozaj.setOnClickListener {
+
+        }
+        binding.mrshisha.setOnClickListener {
+
+        }
+        binding.chronos.setOnClickListener {
+
+        }
+        }
     }
-}

@@ -36,5 +36,47 @@ class IngredientesActivity:AppCompatActivity() {
             startActivity(intent)
         }
         //////////////////////////////////////////
+        binding.fresa.setOnClickListener {
+
+        }
+        binding.platano.setOnClickListener {
+
+        }
+        binding.naranja.setOnClickListener {
+
+        }
+        binding.cafe.setOnClickListener {
+
+        }
+        binding.limon.setOnClickListener {
+
+        }
+        binding.frutosRojos.setOnClickListener {
+
+        }
+        binding.kiwi.setOnClickListener {
+
+        }
+        binding.sandia.setOnClickListener {
+
+        }
+        binding.galleta.setOnClickListener {
+
+        }
+        binding.pina.setOnClickListener {
+
+        }
+        binding.melon.setOnClickListener {
+
+        }
+        binding.lima.setOnClickListener {
+
+        }
+        binding.chocolate.setOnClickListener {
+
+        }
+        binding.melocoton.setOnClickListener {
+
+        }
     }
 }
