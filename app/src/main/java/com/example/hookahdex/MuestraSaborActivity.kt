@@ -13,7 +13,7 @@ import com.google.firebase.ktx.Firebase
 class MuestraSaborActivity: AppCompatActivity() {
     private lateinit var binding: ActivityMuestrasaborBinding
     
-    val database = Firebase.database("https://hookahdex-default-rtdb.europe-west1.firebasedatabase.app/")
+   // val database = Firebase.database("https://hookahdex-default-rtdb.europe-west1.firebasedatabase.app/")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMuestrasaborBinding.inflate(layoutInflater)
@@ -47,7 +47,7 @@ class MuestraSaborActivity: AppCompatActivity() {
         binding.nombreMarca.text = marca
         binding.datos.setOnClickListener {
             if (marca != null) {
-              //  readData(marca)
+                readData(marca)
 
             }
         }
@@ -55,10 +55,10 @@ class MuestraSaborActivity: AppCompatActivity() {
 
 
     }
-/*
+
     private fun readData(marca: String) {
         println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"+marca)
-        database = FirebaseDatabase.getInstance().getReference("tabacos")
+       var database = FirebaseDatabase.getInstance().getReference("tabacos")
         database.child(marca).get().addOnSuccessListener {
             binding.descripcionSabor.text = it.value.toString()
             println(it)
@@ -68,5 +68,5 @@ class MuestraSaborActivity: AppCompatActivity() {
                 binding.descripcionSabor.text = it.value.toString()
                 println(it)
             }
-    }*/
+    }
 }
