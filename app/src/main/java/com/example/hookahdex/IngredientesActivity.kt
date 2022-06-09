@@ -8,11 +8,12 @@ import com.example.hookahdex.databinding.ActivityIngredientesBinding
 
 class IngredientesActivity:AppCompatActivity() {
     private lateinit var binding: ActivityIngredientesBinding
+    private var ingrediente:String=""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityIngredientesBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val database = Firebase.database("https://hookahdex-default-rtdb.europe-west1.firebasedatabase.app/")
+
         ////////////////////////
         //Configuracion botones pie
         binding.pieUsuario.setOnClickListener{
@@ -37,46 +38,60 @@ class IngredientesActivity:AppCompatActivity() {
         }
         //////////////////////////////////////////
         binding.fresa.setOnClickListener {
-
+            val intent = Intent(this,MuestraIngredientesActivity::class.java)
+            startActivity(intent)
         }
         binding.platano.setOnClickListener {
-
+            val intent = Intent(this,MuestraIngredientesActivity::class.java)
+            startActivity(intent)
         }
         binding.naranja.setOnClickListener {
-
+            val intent = Intent(this,MuestraIngredientesActivity::class.java)
+            startActivity(intent)
         }
         binding.cafe.setOnClickListener {
-
+            val intent = Intent(this,MuestraIngredientesActivity::class.java)
+            startActivity(intent)
         }
         binding.limon.setOnClickListener {
-
+            val intent = Intent(this,MuestraIngredientesActivity::class.java)
+            startActivity(intent)
         }
         binding.uva.setOnClickListener {
-
+            val intent = Intent(this,MuestraIngredientesActivity::class.java)
+            startActivity(intent)
         }
         binding.kiwi.setOnClickListener {
-
+            val intent = Intent(this,MuestraIngredientesActivity::class.java)
+            startActivity(intent)
         }
         binding.sandia.setOnClickListener {
-
+            val intent = Intent(this,MuestraIngredientesActivity::class.java)
+            startActivity(intent)
         }
         binding.galleta.setOnClickListener {
-
+            val intent = Intent(this,MuestraIngredientesActivity::class.java)
+            startActivity(intent)
         }
         binding.pina.setOnClickListener {
-
+            val intent = Intent(this,MuestraIngredientesActivity::class.java)
+            startActivity(intent)
         }
         binding.melon.setOnClickListener {
-
+            val intent = Intent(this,MuestraIngredientesActivity::class.java)
+            startActivity(intent)
         }
         binding.lima.setOnClickListener {
-
+            val intent = Intent(this,MuestraIngredientesActivity::class.java)
+            startActivity(intent)
         }
         binding.chocolate.setOnClickListener {
-
+            val intent = Intent(this,MuestraIngredientesActivity::class.java)
+            startActivity(intent)
         }
         binding.melocoton.setOnClickListener {
-
+            val intent = Intent(this,MuestraIngredientesActivity::class.java)
+            startActivity(intent)
         }
     }
 }

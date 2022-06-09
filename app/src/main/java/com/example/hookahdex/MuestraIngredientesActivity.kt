@@ -1,25 +1,29 @@
 package com.example.hookahdex
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hookahdex.databinding.ActivityIngredientesBinding
+import com.example.hookahdex.databinding.ActivityMuestraingredientesBinding
 import com.example.hookahdex.databinding.ActivityMuestrasaborBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
-class MuestraSaborActivity: AppCompatActivity() {
-    private lateinit var binding: ActivityMuestrasaborBinding
+class MuestraIngredientesActivity: AppCompatActivity() {
+    private lateinit var binding: ActivityMuestraingredientesBinding
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMuestrasaborBinding.inflate(layoutInflater)
-        val database = Firebase.database("https://hookahdex-default-rtdb.europe-west1.firebasedatabase.app")
+        binding = ActivityMuestraingredientesBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
         val bundle = intent.extras
         val marca = bundle?.getString("marca")
-       val imagen = bundle?.getInt("imagen")
         ////////////////////////
         //Configuracion botones pie
         binding.pieUsuario.setOnClickListener {
@@ -42,8 +46,12 @@ class MuestraSaborActivity: AppCompatActivity() {
             val intent = Intent(this, GustoActivity::class.java)
             startActivity(intent)
         }
-       //////////////////////////////////////////
-       imagen?.let { binding.imagenmarca.setImageResource(it) }
+        //////////////////////////////////////////
+
+
+
+
+
         binding.nombreMarca.text = marca
         binding.datos.setOnClickListener {
             if (marca != null) {
@@ -52,10 +60,14 @@ class MuestraSaborActivity: AppCompatActivity() {
             }
 
         }
+
+
+
     }
 
     private fun readData(marca: String) {
-       val database = FirebaseDatabase.getInstance().getReference("tabacos")
+        println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"+marca)
+        var database = FirebaseDatabase.getInstance().getReference("tabacos")
         database.child(marca).get().addOnSuccessListener {
             binding.descripcionSabor.text = it.value.toString()
             println(it)

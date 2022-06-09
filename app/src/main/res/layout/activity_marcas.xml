@@ -67,7 +67,8 @@
                         android:src="@mipmap/hookain"
                         android:layout_gravity="center"
                         android:padding="25dp"
-                        android:layout_margin="6dp" />
+                        android:layout_margin="6dp"
+                        android:id="@+id/marca1"/>
 
                     <TextView
                         android:layout_width="match_parent"

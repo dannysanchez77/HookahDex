@@ -12,7 +12,6 @@ class HomeActivity:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val database = Firebase.database("https://hookahdex-default-rtdb.europe-west1.firebasedatabase.app/")
         ////////////////////////
         //Configuracion botones pie
         binding.pieUsuario.setOnClickListener{

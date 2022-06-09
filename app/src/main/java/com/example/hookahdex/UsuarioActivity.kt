@@ -13,7 +13,6 @@ class UsuarioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityUsuarioBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val database = Firebase.database("https://hookahdex-default-rtdb.europe-west1.firebasedatabase.app/")
         val bundle:Bundle?=intent.extras
         val email:String?=bundle?.getString("email")
 
