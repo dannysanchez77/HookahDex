@@ -21,10 +21,8 @@ class UsuarioActivity : AppCompatActivity() {
         binding.inicio.setOnClickListener{
             val intent = Intent(this,HomeActivity::class.java)
                 startActivity(intent)
-
         }
     }
-
     fun setup (email :String){
     binding.usuario.text = email
         binding.cerrarBoton.setOnClickListener {

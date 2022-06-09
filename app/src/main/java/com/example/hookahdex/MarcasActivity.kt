@@ -1,18 +1,20 @@
 package com.example.hookahdex
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
 import android.content.Intent
+import android.media.Image
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hookahdex.databinding.ActivityMarcasBinding
+import com.google.firebase.database.DatabaseReference
 
 class MarcasActivity:AppCompatActivity() {
     private lateinit var binding: ActivityMarcasBinding
+    private var marca: String =""
+    //private var logo: =""
+    private lateinit var database: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMarcasBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val database = Firebase.database("https://hookahdex-default-rtdb.europe-west1.firebasedatabase.app/")
         ////////////////////////
         //Configuracion botones pie
         binding.pieUsuario.setOnClickListener {
@@ -37,22 +39,69 @@ class MarcasActivity:AppCompatActivity() {
         }
         //////////////////////////////////////////
         binding.hookain.setOnClickListener {
+            marca = "hookain"
 
+            val bundle=Bundle()
+            bundle.putString("marca",marca)
+            //bundle.putString("foto",logo)
+            val saborintent = Intent(this, MuestraSaborActivity::class.java)
+            saborintent.putExtras(bundle)
+
+            startActivity(saborintent)
         }
         binding.holster.setOnClickListener {
+            marca = "holster"
 
+            val bundle=Bundle()
+            bundle.putString("marca",marca)
+            val saborintent = Intent(this, MuestraSaborActivity::class.java)
+            saborintent.putExtras(bundle)
+            startActivity(saborintent)
         }
         binding.overdooz.setOnClickListener {
+            marca = "overdooz"
 
+            val bundle=Bundle()
+            bundle.putString("marca",marca)
+            val saborintent = Intent(this, MuestraSaborActivity::class.java)
+            saborintent.putExtras(bundle)
+            startActivity(saborintent)
         }
         binding.dozaj.setOnClickListener {
+            marca = "dozaj"
+
+            val bundle=Bundle()
+            bundle.putString("marca",marca)
+            val saborintent = Intent(this, MuestraSaborActivity::class.java)
+            saborintent.putExtras(bundle)
+            startActivity(saborintent)
 
         }
         binding.mrshisha.setOnClickListener {
+            marca = "mrshisha"
+
+            val bundle=Bundle()
+            bundle.putString("marca",marca)
+            val saborintent = Intent(this, MuestraSaborActivity::class.java)
+            saborintent.putExtras(bundle)
+            startActivity(saborintent)
 
         }
         binding.chronos.setOnClickListener {
+            marca = "chronos"
+
+            val bundle=Bundle()
+            bundle.putString("marca",marca)
+            val saborintent = Intent(this, MuestraSaborActivity::class.java)
+            saborintent.putExtras(bundle)
+            startActivity(saborintent)
 
         }
+
         }
+
+
+
     }
+
+

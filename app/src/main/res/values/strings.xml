@@ -4,4 +4,23 @@
     <string name="acceder">acceder</string>
     <string name="gusto">Gusto</string>
     <string name="usuario">Usuario</string>
+    <string name="mrshisha">MrSHISHA</string>
+    <string name="chronos">CHRONOS</string>
+    <string name="home">Home</string>
+    <string name="marcas">Marcas</string>
+    <string name="ingredientes">Ingredientes</string>
+    <string name="dozaj">DOZAJ</string>
+    <string name="overdooz">OVERDOOZ</string>
+    <string name="holster">HOLSTER</string>
+    <string name="hookain">HOOKAIN</string>
+    <string name="marcas_de_tabaco">MARCAS DE TABACO</string>
+    <string name="afrutado">Afrutado</string>
+    <string name="ingredientes_del_tabaco">INGREDIENTES DEL TABACO</string>
+    <string name="fresa">Fresa</string>
+    <string name="pl_tano">Plátano</string>
+    <string name="naranja">Naranja</string>
+    <string name="cafe">Cafe</string>
+    <string name="limon">Limon</string>
+    <string name="frutos_rojos">Frutos Rojos</string>
+    <string name="uva">Uva</string>
 </resources>

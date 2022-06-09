@@ -51,7 +51,7 @@ class IngredientesActivity:AppCompatActivity() {
         binding.limon.setOnClickListener {
 
         }
-        binding.frutosRojos.setOnClickListener {
+        binding.uva.setOnClickListener {
 
         }
         binding.kiwi.setOnClickListener {

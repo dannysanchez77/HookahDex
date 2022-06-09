@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "189698115803",
+    "firebase_url": "https://hookahdex-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "hookahdex",
     "storage_bucket": "hookahdex.appspot.com"
   },
