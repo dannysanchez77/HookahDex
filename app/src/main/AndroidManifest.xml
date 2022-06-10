@@ -42,5 +42,13 @@
             android:name=".MuestraSaborActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".MuestraGustoActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".MuestraIngredientesActivity"
+            android:exported="true">
+        </activity>
     </application>
 </manifest>

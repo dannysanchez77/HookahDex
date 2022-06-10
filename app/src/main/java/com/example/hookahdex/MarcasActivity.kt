@@ -49,6 +49,7 @@ class MarcasActivity:AppCompatActivity() {
             val saborintent = Intent(this, MuestraSaborActivity::class.java)
             saborintent.putExtras(bundle)
             startActivity(saborintent)
+
         }
         binding.holster.setOnClickListener {
             marca = "holster"
@@ -79,7 +80,7 @@ class MarcasActivity:AppCompatActivity() {
 
         }
         binding.mrshisha.setOnClickListener {
-            marca = "mrshisha"
+            marca = "mrShisha"
             val bundle=Bundle()
             bundle.putInt("imagen",R.mipmap.mrshisha_logo)
             bundle.putString("marca",marca)

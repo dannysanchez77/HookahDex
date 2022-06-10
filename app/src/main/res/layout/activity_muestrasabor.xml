@@ -37,21 +37,22 @@
  <LinearLayout
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
-     android:orientation="vertical">
+     android:orientation="vertical"
+     android:id="@+id/lineartotal"
+     android:visibility="invisible">
      <ImageView
          android:layout_width="150dp"
          android:layout_height="150dp"
-         android:src="@mipmap/sandia"
+
          android:layout_gravity="center"
          android:id="@+id/imagen"
 
          >
-
      </ImageView>
      <TextView
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:text="nombre"
+
          android:textSize="24dp"
          android:textColor="@color/naranja"
          android:textStyle="bold"
@@ -61,7 +62,7 @@
      <TextView
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:text="ingrediente"
+
          android:textSize="24dp"
          android:textColor="@color/naranja"
          android:textStyle="bold"
@@ -71,7 +72,7 @@
      <TextView
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:text="tipo"
+
          android:textSize="24dp"
          android:textColor="@color/naranja"
          android:textStyle="bold"
@@ -81,13 +82,15 @@
      <TextView
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:text="descripcion"
+
          android:textSize="24dp"
          android:textColor="@color/naranja"
          android:textStyle="bold"
          android:gravity="center"
          android:id="@+id/descripcionSabor"
-         android:padding="12dp"/>
+         android:padding="12dp"
+
+         />
 
 
  </LinearLayout>
@@ -100,15 +103,6 @@
         android:orientation="horizontal"
         android:layout_gravity="center"
         >
-
-        <Button
-            android:id="@+id/datos"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:layout_weight="0"
-            android:text="------------>>>>>>>"
-            />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -116,7 +110,25 @@
             android:layout_gravity="center"
             android:id="@+id/imagenmarca"
             android:layout_weight="1"/>
+        <Button
+            android:id="@+id/datos"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:text="SIGUIENTE"
+            android:drawableBottom="@drawable/bordesito"
+            android:backgroundTint="@color/cian"
 
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@mipmap/hookain"
+            android:layout_gravity="center"
+            android:id="@+id/imagenmarca1"
+            android:layout_weight="1"/>
 
     </LinearLayout>
     <LinearLayout
