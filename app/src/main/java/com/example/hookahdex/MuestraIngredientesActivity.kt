@@ -15,7 +15,6 @@ import com.google.firebase.ktx.Firebase
 class MuestraIngredientesActivity: AppCompatActivity() {
     private lateinit var binding: ActivityMuestraingredientesBinding
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMuestraingredientesBinding.inflate(layoutInflater)
@@ -27,7 +26,7 @@ class MuestraIngredientesActivity: AppCompatActivity() {
         ////////////////////////
         //Configuracion botones pie
         binding.pieUsuario.setOnClickListener {
-            val intent = Intent(this, UsuarioActivity::class.java)
+            val intent = Intent(this, VideoActivity::class.java)
             startActivity(intent)
         }
         binding.pieHome.setOnClickListener {
@@ -47,11 +46,6 @@ class MuestraIngredientesActivity: AppCompatActivity() {
             startActivity(intent)
         }
         //////////////////////////////////////////
-
-
-
-
-
         binding.nombreMarca.text = marca
         binding.datos.setOnClickListener {
             if (marca != null) {
@@ -68,6 +62,7 @@ class MuestraIngredientesActivity: AppCompatActivity() {
     private fun readData(marca: String) {
         println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"+marca)
         var database = FirebaseDatabase.getInstance().getReference("tabacos")
+        //var reference = database.
         database.child(marca).get().addOnSuccessListener {
             binding.descripcionSabor.text = it.value.toString()
             println(it)
@@ -77,5 +72,7 @@ class MuestraIngredientesActivity: AppCompatActivity() {
                 binding.descripcionSabor.text = it.value.toString()
                 println(it)
             }
+
     }
+
 }

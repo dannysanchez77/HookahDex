@@ -1,30 +1,23 @@
 package com.example.hookahdex
-
 import android.content.Intent
+import android.media.Image
+import android.media.session.MediaController
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.hookahdex.databinding.ActivityIngredientesBinding
-import com.example.hookahdex.databinding.ActivityMuestragustoBinding
-import com.example.hookahdex.databinding.ActivityMuestraingredientesBinding
-import com.example.hookahdex.databinding.ActivityMuestrasaborBinding
+import com.example.hookahdex.databinding.ActivityMarcasBinding
+import com.example.hookahdex.databinding.ActivityVideoBinding
 import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
-class MuestraGustoActivity: AppCompatActivity() {
-    private lateinit var binding: ActivityMuestragustoBinding
-
-
+class VideoActivity:AppCompatActivity() {
+    private lateinit var binding: ActivityVideoBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMuestragustoBinding.inflate(layoutInflater)
+        binding = ActivityVideoBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
-        val bundle = intent.extras
-        val marca = bundle?.getString("marca")
         ////////////////////////
         //Configuracion botones pie
         binding.pieUsuario.setOnClickListener {
@@ -48,24 +41,26 @@ class MuestraGustoActivity: AppCompatActivity() {
             startActivity(intent)
         }
         //////////////////////////////////////////
-
-        binding.nombreGusto.text = marca
-        binding.datos.setOnClickListener {
-            if (marca != null) {
-                readData(marca)
-            }
-        }
-    }
-    private fun readData(marca: String) {
-        val database = FirebaseDatabase.getInstance().getReference("tabacos")
-        database.child(marca).get().addOnSuccessListener {
-            binding.descripcionSabor.text = it.value.toString()
+        binding.sorpresa.setOnClickListener{
+            binding.sorpresa.visibility = View.GONE
+            readData()
+            binding.video.visibility = View.VISIBLE
             println(it)
         }
-        database.child(marca).child("sabor").child("punani").child("descripcion").get()
-            .addOnSuccessListener {
-                binding.descripcionSabor.text = it.value.toString()
-                println(it)
+
+    }
+    fun readData() {
+        val database = Firebase.database("https://hookahdex-default-rtdb.europe-west1.firebasedatabase.app").reference
+        database.child("tabacos").child("video").child("libre")
+            .get().addOnSuccessListener {
+                binding.video.setVideoPath(it.value.toString())
             }
+
     }
 }
+
+
+
+
+
+

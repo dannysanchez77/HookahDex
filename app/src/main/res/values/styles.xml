@@ -3,6 +3,6 @@
 
     <style name="AppTheme" />
     <style name="Splash" parent="AppTheme">
-        <item name="android:windowBackground">@drawable/ic_launcher_foreground</item>
+        <item name="android:windowBackground">@drawable/solo_logo2</item>
     </style>
 </resources>

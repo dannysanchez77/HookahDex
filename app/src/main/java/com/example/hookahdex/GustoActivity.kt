@@ -16,7 +16,7 @@ class GustoActivity:AppCompatActivity() {
         ////////////////////////
         //Configuracion botones pie
         binding.pieUsuario.setOnClickListener{
-            val intent = Intent(this,UsuarioActivity::class.java)
+            val intent = Intent(this,VideoActivity::class.java)
             startActivity(intent)
         }
         binding.pieHome.setOnClickListener{
